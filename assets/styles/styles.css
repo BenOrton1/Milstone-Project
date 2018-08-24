@@ -3,61 +3,41 @@
 /*-------------------------------------navbar*/
 
 .my-navbar {
-    background-color: transparent;
+    background-color: #fff;
     position: absolute;
     z-index: 1;
     right: 0;
     top: 0;
+    padding-bottom: 0;
 }
 
-.nav-link {
-    color: #fafafa;
-
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-    text-decoration: none;
-    color: #5b7472;
-
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-/*-------------------------------------Header*/
-
-.jumbotron {
-    background-color: transparent;
-}
-
-.name-container {
-    height: 80vh;
-    padding: 0;
-
-    background: url('../images/DOG.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-
-}
-
-.header-text {
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
     font-family: 'Inconsolata', monospace, sans-serif;
-    color: #de5d0f;
-    font-weight: 100;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
-.header-text h1 {
-    font-size: 36px;
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: none;
+    color: #efbcb8;
+
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.home-brand a {
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Inconsolata', monospace;
+
 }
