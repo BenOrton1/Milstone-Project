@@ -1,9 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700,800,900');
+
+
+/*-------------------------------------general*/
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+.capital {
+    text-transform: uppercase;
+}
+
+/*-------------------------------------colours*/
+
+.home-brand-bg {
+    background-color: #f69394;
+}
+
+
+.footer-bg {
+    background-color: #f69394;
+}
+
+
+
 
 /*-------------------------------------navbar*/
 
 .my-navbar {
-    background-color: #fff;
+    background-color: #f69394;
     position: absolute;
     z-index: 1;
     right: 0;
@@ -12,8 +39,8 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #000000;
-    font-family: 'Inconsolata', monospace, sans-serif;
+    color: #454545;
+    font-family: 'Quicksand', sans-serif;
 
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -23,7 +50,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover {
     text-decoration: none;
-    color: #efbcb8;
+    color: #ffffff;
 
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -31,13 +58,56 @@
     -webkit-transition: all 0.3s ease-in-out;
 }
 
+/*-------------------------------------header*/
 
-
+.home-brand {
+    height: 100px;
+}
 
 .home-brand a {
     color: #000;
     text-decoration: none;
     font-size: 2em;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    top: 25px;
+}
+
+/*-------------------------------------about me*/
+
+.about-me-styles {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.about-me-heading {
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+
+/*-------------------------------------social links*/
+
+.social-network-links {
+    text-align: center;
+}
+
+.social-network-links li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 45px;
+
+}
+
+.social-network-links li a i {
+    color: #fafafa;
+    font-size: 24px;
+}
+
+/*-------------------------------------footer*/
+
+.footer-styles {
+    height: 120px;
 
 }
