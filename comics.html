@@ -11,52 +11,95 @@
 </head>
 
 <body>
-    <!--navbar-->
 
-    <nav class="navbar navbar-expand-md navbar-light my-navbar">
-        <div class="row container">
-            <div class="col-md-auto">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="animation.html">Animations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="comics.html">Comics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="Illistrations.html">Illistrations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="contact-me.html">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
     <!--header-->
-    <header>
+    <header class="row">
         <div class="container-fluid home-brand-bg">
-            <div class="row">
-                <div class="col  home-brand">
-                    <a href="index.html">AkiroTea</a>
-                </div>
+            <div class="col  home-brand">
+                <a href="index.html">AkiroTea</a>
             </div>
         </div>
+        <!--navbar-->
+        <nav class="my-navbar">
+
+            <div class="col-md-auto">
+                <input type="checkbox" id="burger-icon" class="burger-icon">
+                <label for="burger-icon" class="burger-icon-label"> <img src="/assets/images/Hamburger_icon.svg.png" > </label>
+
+                <ul class="my-navbar-ul">
+                    <li>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="comics.html">Comics</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="animation.html">Animations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Illustrations.html">Illustrations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
     <!--carousel-->
-    
+    <div class="row">
+        <h2 class="">Comics</h2>
+    </div>
+
+
+    <div class="row">
+
+        <section class="order-xl-2 col-xl-8">
+            <div>
+                <img src="../assets/images/DOG.jpg">
+            </div>
+        </section>
+        <!--about me-->
+
+        <artical class="order-xl-1 col-xl-4 about-me-bg">
+            <div class="about-me-styles">
+                <h2 class="capital about-me-heading">about me</h2>
+                <p> laborum, dolorum vel iste suscipit quas obcaecati. Quisquam impedit et deserunt eum corrupti velit laudantium tenetur beatae dignissimos hic ab totam, odio ea? Necessitatibus facere numquam officiis ut aut provident incidunt facilis. Maxime
+                    necessitatibus, molestiae doloremque aperiam. Cumque quibusdam minus facere illum, omnis tenetur, quasi molestias. Veritatis, inventore, dolor?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit esse natus quibusdam minus, doloremque, expedita numquam nesciunt maiores placeat earum, in quod. Error rerum fugit eveniet eos sed soluta sint fugiat, vitae, hic non dolorum.
+                    Odio, nobis reiciendis, suscipit placeat ipsam, laborum animi assumenda numquam eos dignissimos illum autem. Laudantium.</p>
+            </div>
+        </artical>
+    </div>
+
+    <!--video-->
+    <section>
+        <div class="row">
+            <div class="col-xl-8 video-style">
+                <!--copied vimeo embbedding-->
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/58037771" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <artical class="col-xl-4 video-bg video-artical-style">
+                <h2 capital>Fade</h2>
+                <p>this is some information about this animations <a href="animation.html">see more here</a></p>
+            </artical>
+        </div>
+    </section>
+
 
     <!--footer-->
     <footer>
@@ -67,17 +110,12 @@
                     <ul class="social-network-links">
                         <li><a target="_blank" href "#"><i class="fab fa-facebook"></i></a></li>
                         <li><a target="_blank" href "#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a target="_blank" href "#"><i class="fab fa-linkedin"></i></a></li>
                         <li><a target="_blank" href "#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a target="_blank" href "#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
 
 
     <!--javascript-->
