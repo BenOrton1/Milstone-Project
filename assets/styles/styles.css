@@ -29,7 +29,7 @@ body {
     background-color: #fafafa;
 }
 
-.about-me-bg {
+.pink-bg {
     background-color: #ffcaca;
 }
 
@@ -37,7 +37,7 @@ body {
     background-color: #fafafa;
 }
 
-.video-bg {
+.dark-bg {
     background-color: #232323;
 }
 
@@ -45,6 +45,178 @@ body {
 .footer-bg {
     background-color: #f69394;
 }
+
+
+
+/*-------------------------------------header*/
+
+.home-brand {
+    height: 120px;
+    position: relative;
+}
+
+.home-brand a {
+    color: #000;
+    text-decoration: none;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 5px;
+    position: relative;
+    top: 22px;
+}
+
+
+.home-brand a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-top: 3px solid #faa4a3;
+    border-bottom: 3px solid #faa4a3;
+    transform: scale(1);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.home-brand a:hover::before {
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+
+.home-brand a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-left: 3px solid #faa4a3;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.home-brand a:hover::after {
+    transform: scale(1);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+/*------------------------------------sub page header*/
+
+.sub-page-header {
+    position: relative;
+    text-align: center;
+    background-color: #fff9f9;
+    color: #1f1f1f;
+    margin: 0;
+    padding: 10px;
+}
+
+.sub-page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: scale(1);
+}
+
+/*-----------------------------------sub header link animation*/
+
+.sub-header {
+    text-align: center;
+    margin-top: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sub-header a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+
+.sub-header a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-top: 2px solid #faa4a3;
+    border-bottom: 2px solid #faa4a3;
+    transform: scale(1);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.sub-header a:hover::before {
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+
+.sub-header a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border-left: 2px solid #faa4a3;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+
+}
+
+.sub-header a:hover::after {
+    transform: scale(1);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
 
 
 
@@ -154,236 +326,27 @@ body {
     }
 }
 
-/*-------------------------------------header*/
 
-.home-brand {
-    height: 120px;
-    position: relative;
-}
+/*-------------------------------------left-artical-styles*/
 
-.home-brand a {
-    color: #000;
-    text-decoration: none;
-    font-size: 3em;
-    font-weight: 300;
-    margin: 5px;
-    position: relative;
-    top: 22px;
-}
-
-
-.home-brand a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -5px;
-    right: -5px;
-    border-top: 3px solid #faa4a3;
-    border-bottom: 3px solid #faa4a3;
-    transform: scale(1);
-    transform-origin: left;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-
-}
-
-.home-brand a:hover::before {
-    transform: scale(0, 1);
-    transform-origin: left;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-
-
-.home-brand a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -5px;
-    right: -5px;
-    border-left: 3px solid #faa4a3;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-
-}
-
-.home-brand a:hover::after {
-    transform: scale(1);
-    transform-origin: top;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-/*-------------------------------------about me*/
-
-.about-me-styles {
+.left-artical-styles {
     color: #000000;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-/*-------------------------------------carousel styles*/
+/*-------------------------------------right artical*/
 
-.carousel-styles {
-    padding-left: 0;
-}
-
-/*-------------------------------------comics*/
-
-.comics-styles {
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.comic-header {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-.comic-header a {
-    color: #000;
-    text-decoration: none;
-    position: relative;
-
-
-}
-
-
-.comic-header a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -5px;
-    right: -5px;
-    border-top: 2px solid #faa4a3;
-    border-bottom: 2px solid #faa4a3;
-    transform: scale(1);
-    transform-origin: left;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-
-}
-
-.comic-header a:hover::before {
-    transform: scale(0, 1);
-    transform-origin: left;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-
-
-.comic-header a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -5px;
-    right: -5px;
-    border-left: 2px solid #faa4a3;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-
-}
-
-.comic-header a:hover::after {
-    transform: scale(1);
-    transform-origin: top;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.comic-box h3 {
-    text-align: center;
-    color: #fafafa;
-    font-weight: 300;
-
-}
-
-
-.comic-images {
-    position: relative;
-    display: block;
-    margin: 0px auto;
-    opacity: 1;
-
-}
-
-
-
-.comic-box .comic-title h3 {
-    position: absolute;
-    top: 15px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    line-height: 300px;
-    ;
-}
-
-.comic-box .comic-title::before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 300px;
-    transform: translatex(-50%);
-    background: black;
-    opacity: 0;
-    content: '';
-}
-
-.comic-box .comic-title h3:hover,
-.comic-box .comic-title:hover::before {
-    opacity: 0.8;
-    transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    -webkit-transition: all 0.3s ease-in;
-}
-
-/*-------------------------------------video*/
-
-.video-style {
-    padding: 0;
-}
-
-/*-------------------------------------video artical*/
-
-.video-artical-style {
-    color: #000000;
+.right-artical-styles {
     color: #f2b3b3;
 }
 
+.right-artical-styles p {
+    margin: 10px;
+}
 
 
-.video-artical-style a {
+.right-artical-styles a {
     text-decoration: none;
     color: #f2b3b3;
     transition: all 0.3s ease-in-out;
@@ -392,7 +355,7 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-.video-artical-style a:hover {
+.right-artical-styles a:hover {
     text-decoration: none;
     color: #f69394;
 
@@ -402,7 +365,9 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-/*-------------------------------------social links*/
+
+
+/*------------------------------------FOOTER social links*/
 
 .social-network-links {
     text-align: center;
@@ -446,3 +411,128 @@ body {
     height: 120px;
     background-image: url(../images/footer.jpg)
 }
+
+
+
+
+/*------------------------------------------------------------------------------------------------HOME PAGE*/
+
+/*-------------------------------------carousel styles*/
+
+.carousel-styles {
+    padding-left: 0;
+}
+
+/*-------------------------------------comics*/
+
+.comic-box a h3 {
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.comic-box a h3:hover {
+    color: #ffcaca;
+}
+
+
+.comic-box a {
+    text-decoration: none;
+}
+
+
+
+.comic-images {
+    position: relative;
+    display: block;
+    margin: 0px auto;
+    opacity: 1;
+}
+
+@media(min-width:992px) {
+
+    .comics-styles {
+        padding-bottom: 100px;
+    }
+
+    .comic-box .comic-title h3 {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        line-height: 300px;
+        color: #fafafa;
+    }
+
+    .comic-box .comic-title::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 300px;
+        transform: translatex(-50%);
+        background: black;
+        opacity: 0;
+        content: '';
+    }
+
+    .comic-box .comic-title h3:hover,
+    .comic-box .comic-title:hover::before {
+        color: #fafafa;
+        opacity: 0.8;
+        transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+    }
+}
+
+/*-------------------------------------video*/
+
+.video-style {
+    padding: 0;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------------HOME PAGE END*/
+
+/*---------------------------------------------------------------------------------------------------------comics page*/
+
+/*-------------------------------------comics cover image*/
+
+.comic-cover-image1,
+.comic-cover-image2,
+.comic-cover-image3,
+.comic-cover-image4 {
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.comic-cover-image1 {
+    background-image: url('/assets/images/Where.jpg');
+}
+
+.comic-cover-image2 {
+    background-image: url('/assets/images/3.jpg');
+}
+
+.comic-cover-image3 {
+    background-image: url('/assets/images/DOG.jpg');
+}
+
+.comic-cover-image4 {
+    background-image: url('/assets/images/awkward.jpg');
+}
+
+/*-------------------------------------comics page END*/
+
