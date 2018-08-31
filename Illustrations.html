@@ -11,53 +11,96 @@
 </head>
 
 <body>
-    <!--navbar-->
 
-    <nav class="navbar navbar-expand-md navbar-light my-navbar">
-        <div class="row container">
-            <div class="col-md-auto">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="animation.html">Animations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="comics.html">Comics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="Illistrations.html">Illistrations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-color" href="contact-me.html">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
     <!--header-->
-    <header>
+    <header class="row">
         <div class="container-fluid home-brand-bg">
-            <div class="row">
-                <div class="col  home-brand">
-                    <a href="index.html">AkiroTea</a>
-                </div>
+            <div class="col  home-brand">
+                <a href="index.html">AkiroTea</a>
             </div>
         </div>
-    </header>
-    <!--carousel-->
-    
+        <!--navbar-->
+        <nav class="my-navbar">
 
+            <div class="col-md-auto">
+                <input type="checkbox" id="burger-icon" class="burger-icon">
+                <label for="burger-icon" class="burger-icon-label"> <img src="/assets/images/Hamburger_icon.svg.png" > </label>
+
+                <ul class="my-navbar-ul">
+                    <li>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="comics.html">Comics</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="animation.html">Animations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="Illustrations.html">Illustrations</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <section class="portfolio">
+        <div class="row portfolio-row">
+            <div class="col-4">
+                <figure>
+                    <img src="../assets/images/3.jpg" alt="illustration" class="">
+                    <figcaption>some text</figcaption>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure>
+                    <img src="../assets/images/3.jpg" alt="illustration" class="">
+                    <figcaption>some text</figcaption>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure>
+                    <img src="../assets/images/3.jpg" alt="illustration" class="">
+                    <figcaption>some text</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row portfolio-row">
+            <div class="col-4">
+                <figure>
+                    <img src="../assets/images/3.jpg" alt="illustration" class="">
+                    <figcaption>some text</figcaption>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure>
+                    <img src="../assets/images/3.jpg" alt="illustration" class="">
+                    <figcaption>some text</figcaption>
+                </figure>
+            </div>
+            <div class="col-4">
+                <figure>
+                    <img src="../assets/images/3.jpg" alt="illustration" class="">
+                    <figcaption>some text</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
     <!--footer-->
     <footer>
         <div class="container-fluid footer-styles footer-bg">
@@ -67,17 +110,12 @@
                     <ul class="social-network-links">
                         <li><a target="_blank" href "#"><i class="fab fa-facebook"></i></a></li>
                         <li><a target="_blank" href "#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a target="_blank" href "#"><i class="fab fa-linkedin"></i></a></li>
                         <li><a target="_blank" href "#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a target="_blank" href "#"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-
-
 
 
     <!--javascript-->

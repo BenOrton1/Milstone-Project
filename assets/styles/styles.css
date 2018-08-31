@@ -337,16 +337,16 @@ body {
 
 /*-------------------------------------right artical*/
 
-.right-artical-styles {
+.right-artical-style {
     color: #f2b3b3;
 }
 
-.right-artical-styles p {
+.right-artical-style p {
     margin: 10px;
 }
 
 
-.right-artical-styles a {
+.right-artical-style a {
     text-decoration: none;
     color: #f2b3b3;
     transition: all 0.3s ease-in-out;
@@ -355,7 +355,7 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-.right-artical-styles a:hover {
+.right-artical-style a:hover {
     text-decoration: none;
     color: #f69394;
 
@@ -519,20 +519,36 @@ body {
 
 
 .comic-cover-image1 {
-    background-image: url('/assets/images/Where.jpg');
+    background-image: url('../images/Where.jpg');
 }
 
 .comic-cover-image2 {
-    background-image: url('/assets/images/3.jpg');
+    background-image: url('../images/3.jpg');
 }
 
 .comic-cover-image3 {
-    background-image: url('/assets/images/DOG.jpg');
+    background-image: url('../images/DOG.jpg');
 }
 
 .comic-cover-image4 {
-    background-image: url('/assets/images/awkward.jpg');
+    background-image: url('../images/awkward.jpg');
 }
 
 /*-------------------------------------comics page END*/
 
+/*---------------------------------------------------------------------------------------------------------portfolio*/
+
+.portfolio-row{
+    padding:1rem
+}
+
+.portfolio-row figure {
+    width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.portfolio-row figure img{
+    width:100%;
+    height:auto;
+}
