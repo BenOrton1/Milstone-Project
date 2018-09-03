@@ -328,26 +328,26 @@ body {
 }
 
 
-/*-------------------------------------left-artical-styles*/
+/*-------------------------------------left-article-styles*/
 
-.left-artical-styles {
+.left-article-styles {
     color: #000000;
     margin-left: 15px;
     margin-right: 15px;
 }
 
-/*-------------------------------------right artical*/
+/*-------------------------------------right article*/
 
-.right-artical-styles {
+.right-article-styles {
     color: #f2b3b3;
 }
 
-.right-artical-styles p {
+.right-article-styles p {
     margin: 10px;
 }
 
 
-.right-artical-styles a {
+.right-article-styles a {
     text-decoration: none;
     color: #f2b3b3;
     transition: all 0.3s ease-in-out;
@@ -356,7 +356,7 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
 }
 
-.right-artical-styles a:hover {
+.right-article-styles a:hover {
     text-decoration: none;
     color: #f69394;
 
@@ -543,7 +543,7 @@ body {
     padding: 0;
 }
 
-.video-artical-styles {
+.video-article-styles {
     padding-bottom: 25px;
 }
 
@@ -571,19 +571,7 @@ body {
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.test::before{
-    content: '';
 
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color:#fafafa;
-    transform: scale(0);
-    
-   
-}
 
 .portfolio-row figure label {
     width: 100%;
@@ -613,37 +601,13 @@ body {
     z-index: 100;
     opacity: 1;
     margin-top: -10px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.illustration-icon{
-    display:none;
-}
 
-.illustration-icon:checked + label
-
-{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height: auto;
-    overflow:auto;
-    z-index: 99;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
-
-.illustration-icon:checked ~ .test::before{
-transform: scale(1);
-z-index:98;
-opacity:0.8;
-}
 
 /*--------------------------------contact me*/
 
