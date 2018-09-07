@@ -86,4 +86,8 @@
         overflow: auto;
         z-index: 99;
     }
+    .portfolio-row figure label {
+        overflow: hidden;
+        margin: 10px;
+    }
 }

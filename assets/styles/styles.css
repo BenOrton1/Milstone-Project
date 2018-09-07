@@ -5,7 +5,6 @@
 
 html,
 body {
-    overflow-x: hidden;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -18,6 +17,15 @@ h2 {
     margin-top: 15px;
     text-transform: uppercase;
 }
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: underline;
+    padding: 15px;
+
+}
+
 
 /*-------------------------------------background colours*/
 
@@ -33,17 +41,20 @@ body {
     background-color: #ffcaca;
 }
 
-.comic-bg {
-    background-color: #fafafa;
-}
-
 .dark-bg {
     background-color: #232323;
 }
 
+.comic-bg {
+    background-color: #fafafa;
+}
+
+.portfolio-bg {
+    background-color: #fafafa;
+}
 
 .footer-bg {
-    background-color: #f69394;
+    background-color: #fafafa;
 }
 
 
@@ -137,8 +148,8 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -5px;
-    right: -5px;
+    left: 1px;
+    right: 1px;
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
     transform: scale(1);
@@ -225,7 +236,7 @@ body {
     position: absolute;
     z-index: 1;
     top: 10px;
-    right: 0;
+    right: 10px;
     padding: 0;
 }
 
@@ -332,6 +343,10 @@ body {
     padding-bottom: 30px;
 }
 
+.left-article-styles li {
+    margin-right: 10px;
+}
+
 .left-article-styles a {
     text-decoration: none;
     color: #000000;
@@ -361,6 +376,12 @@ body {
 
 .right-article-styles p {
     margin-left: 20px;
+    margin-right: 20px;
+}
+
+.right-article-styles li {
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .right-article-styles a {
@@ -424,17 +445,30 @@ body {
 
 .footer-styles {
     height: 120px;
-    background-image: url(../images/footer.jpg)
 }
+
+.footer-styles p {
+    margin: 20px;
+    color: #232323;
+    font-weight: 400;
+}
+
+.form-style {
+    margin: 20px;
+    color: #232323;
+    text-align: center;
+}
+
 
 /*------------------------------------------------------------------------------------------------HOME PAGE*/
 
 .about-me-heading {
     text-align: center;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
-.about-me-heading u{
-     
+
+.about-me-heading u {
+
     text-decoration: none;
     border-bottom: 1px solid black;
 
@@ -445,6 +479,8 @@ body {
 
 .carousel-styles {
     padding-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*-------------------------------------comics*/
@@ -518,6 +554,8 @@ body {
 
 .video-style {
     padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .video-article {
@@ -528,10 +566,6 @@ body {
     text-align: left;
 }
 
-.video-article h3 {
-    font-weight: 400;
-    text-decoration: underline;
-}
 
 
 
@@ -559,6 +593,7 @@ body {
         height: 70vh;
         width: auto;
         background-attachment: fixed;
+        -ms-background-attachment: scroll;
         background-position: right;
         background-repeat: no-repeat;
         background-size: 70%;
@@ -575,6 +610,36 @@ body {
     }
 }
 
+/* code taken from https://stackoverflow.com/questions/27966735/why-background-image-is-moving-when-scroll-at-ie to fix parallax scroll issue in edge and IE*/
+
+/*Edge*/
+
+@supports ( -ms-accelerator:true) {
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+    body {
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/*Ie 10/11*/
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+    body {
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/*end of copied code*/
 
 .comic-cover-image1 {
     background-image: url('../images/comic page where no one.jpg');
@@ -605,7 +670,7 @@ body {
 }
 
 @media(min-width:992px) {
-    .video-styles {
+    .video-styles iframe {
         padding: 5em;
         padding-bottom: 0;
     }
@@ -613,7 +678,7 @@ body {
 
 /*-------------------------------------anamation page END*/
 
-/*---------------------------------------------------------------------------------------------------------portfolio*/
+/*---------------------------------------------------------------------------------------------------------illustretion page*/
 
 .portfolio-row,
 large-image {
@@ -647,7 +712,23 @@ large-image {
     -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-row figure:hover img {
+.illustration-icon:not(:checked)+label img:hover,
+.illustration-icon-1:not(:checked)+label img:hover,
+.illustration-icon-2:not(:checked)+label img:hover,
+.illustration-icon-3:not(:checked)+label img:hover,
+.illustration-icon-4:not(:checked)+label img:hover,
+.illustration-icon-5:not(:checked)+label img:hover,
+.illustration-icon-6:not(:checked)+label img:hover,
+.illustration-icon-7:not(:checked)+label img:hover,
+.illustration-icon-portrait:not(:checked)+label img:hover,
+.illustration-icon-portrait-1:not(:checked)+label img:hover,
+.illustration-icon-portrait-2:not(:checked)+label img:hover,
+.illustration-icon-portrait-3:not(:checked)+label img:hover,
+.illustration-icon-portrait-4:not(:checked)+label img:hover,
+.illustration-icon-portrait-5:not(:checked)+label img:hover,
+.illustration-icon-portrait-6:not(:checked)+label img:hover,
+.illustration-icon-portrait-7:not(:checked)+label img:hover {
+    opacity: 0.8;
     transform: scale(1.2);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -667,18 +748,14 @@ large-image {
 }
 
 
-/*--------------------------------contact me*/
+/*-----------------------------------------------------------------------------about me page*/
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
-}
+/*image is currently a placeholderimage to be replaced with a self portrait*/
 
-button[type=submit] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #ff9f31;
-    color: #fafafa;
+.about-me-image {
+    background: url("../images/con-list.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
 }
-    

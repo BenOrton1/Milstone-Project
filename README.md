@@ -1,4 +1,11 @@
-MILSTONE PROJECT AND ZORIKAS WEBSITE
+
+# MILSTONE PROJECT AND ZORIKAS WEBSITE
+
+
+
+
+## What is it? 
+>A website created primerily in CSS3 and HTML5 <hr>  
 
 This is a project to creat a website to act as a place to display the work of an animator and artist.
 
