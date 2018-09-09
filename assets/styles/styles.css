@@ -155,7 +155,7 @@ body {
     transform: scale(1);
 }
 
-/*-----------------------------------sub header link animation*/
+/*-----------------------------------sub header + link animation*/
 
 .sub-header {
     text-align: center;
@@ -172,60 +172,63 @@ body {
 
 }
 
-
-.sub-header a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -5px;
-    right: -5px;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    transform: scale(1);
-    transform-origin: left;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-
-}
-
-.sub-header a:hover::before {
-    transform: scale(0, 1);
-    transform-origin: left;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-}
+@media(min-width:768px) {
 
 
+    .sub-header a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5px;
+        right: -5px;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        transform: scale(1);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
 
-.sub-header a::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -5px;
-    right: -5px;
-    border-left: 2px solid;
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+    }
 
-}
+    .sub-header a:hover::before {
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
 
-.sub-header a:hover::after {
-    transform: scale(1);
-    transform-origin: top;
-    transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+
+
+    .sub-header a::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -5px;
+        right: -5px;
+        border-left: 2px solid;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+
+    }
+
+    .sub-header a:hover::after {
+        transform: scale(1);
+        transform-origin: top;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+    }
 }
 
 /*-------------------------------------navbar*/
@@ -235,8 +238,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     z-index: 1;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     padding: 0;
 }
 
@@ -266,9 +269,9 @@ body {
 .burger-icon:checked~.my-navbar-ul {
     width: 100vw;
     height: 150vh;
+    position: fixed;
     background-color: rgb(255, 149, 148);
     background-color: rgba(255, 255, 255, 0.9);
-
     transform: scale(1, 1);
     transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
     -moz-transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
@@ -277,12 +280,20 @@ body {
 
 }
 
+.burger-icon:checked+label {
+    position: fixed;
+}
+
 .nav-link {
     color: #2e2727;
     text-align: center;
     padding-top: 4vh;
     padding-bottom: 1vh;
 
+}
+
+.nav-link:hover {
+    color: #f69394;
 }
 
 
@@ -302,7 +313,10 @@ body {
     .burger-icon-label {
         display: none;
     }
-
+    .my-navbar {
+        top: 15px;
+        right: 15px;
+    }
     .my-navbar-ul {
         transform: scale(1);
         display: flex;
@@ -369,7 +383,7 @@ body {
 /*-------------------------------------right article*/
 
 .right-article-styles {
-    color: #f2b3b3;
+    color: #fafafa;
     padding-bottom: 30px;
 
 }
@@ -386,7 +400,7 @@ body {
 
 .right-article-styles a {
     text-decoration: none;
-    color: #f2b3b3;
+    color: #fafafa;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
