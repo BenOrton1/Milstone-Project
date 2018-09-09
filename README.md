@@ -60,7 +60,7 @@ The carousel has has been copied from the [bootstrap documentation](https://getb
 
 Fix for parallax scrolling error in edge and internet explorer copied from [stack overflow](https://stackoverflow.com/questions/27966735/why-background-image-is-moving-when-scroll-at-ie) in styles.css lines 627 to 656.
 
-The idea for the checkbox navbar was based on a tutorial by kevin powell on {youtube](https://www.youtube.com/watch?v=8QKOaTYvYUA&list=PLS0Qa4l_9XiBnJ1sHNy9N_at-1shWtk67&index=5&t=2149s) although it has been changed to better suit my design. 
+The idea for the checkbox navbar was based on a tutorial by kevin powell on [youtube](https://www.youtube.com/watch?v=8QKOaTYvYUA&list=PLS0Qa4l_9XiBnJ1sHNy9N_at-1shWtk67&index=5&t=2149s) although it has been changed to better suit my design. 
 
 https://www.w3schools.com/ has provided lots of help in information throughout this project
 
@@ -70,6 +70,6 @@ All images provided by Zorika Gaeta.
 
 Haley and Neil from the tutor team that helped me with pseudo classes and an error with my relative pathways. 
 
-Ricardo Quichocho Gallegos provided feedback and advise thought the project
+Ricardo Quichocho Gallegos provided feedback and advice thought the project
 
 And finally Simen Daehlin, Heather Olcot, Joke Heyndels and Kevin Cutis for helping to test my website. 
