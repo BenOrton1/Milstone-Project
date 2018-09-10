@@ -4,6 +4,8 @@
 This is a project to create a website created primarily in **CSS3** and **HTML5** 
 
 It will act as a place to display the work of an animator, comic book artist and illustrator.
+
+This website was built by Benjamin Orton.
 <hr>  
 
 

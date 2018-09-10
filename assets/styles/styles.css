@@ -270,7 +270,7 @@ body {
     width: 100vw;
     height: 150vh;
     position: fixed;
-    background-color: rgb(255, 149, 148);
+    background-color: #fafafa;
     background-color: rgba(255, 255, 255, 0.9);
     transform: scale(1, 1);
     transition: all .5s cubic-bezier(0.13, 0.84, 0.42, 1.02);
@@ -409,7 +409,7 @@ body {
 
 .right-article-styles p a:hover {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffcaca;
 
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -664,7 +664,7 @@ body {
 }
 
 .comic-cover-image3 {
-    background-image: url('../images/DOG.jpg');
+    background-image: url('../images/illustrations/07.jpg');
 }
 
 .comic-cover-image4 {
